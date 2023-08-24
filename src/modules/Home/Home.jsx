@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../../components/Hero/Hero";
-import Products from "../../components/Products/Products";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import FeaturedCard from "../../components/FeaturedCard/FeaturedCard";
 import StatCard from "../../components/StatCard/StatCard";
-import Footer from "../../components/Footer/Footer";
+import Categories from "../../components/Categories/Categories";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -22,6 +22,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <Categories/>
       <div className="flex flex-col text-center w-full mt-20">
         <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
           PRODUCTS
@@ -32,13 +33,11 @@ const Home = () => {
       </div>
       {
         products.length > 0 ? 
-        <Products products={products}/> :
+        <ProductCard products={products}/> :
         <div>Loading....</div>
       }
       {/* <Products /> */}
-      <FeaturedCard />
       <StatCard/>
-      <Footer/>
     </>
   );
 };
