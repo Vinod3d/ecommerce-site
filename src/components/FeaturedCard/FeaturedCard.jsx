@@ -9,7 +9,7 @@ const FeaturedCard = ({cards = [1, 2, 3]}) => {
           <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
             ROOF PARTY POLAROID
           </h2>
-          <h1 classNameName="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+          <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
             Master Cleanse Reliac Heirloom
           </h1>
         </div>
@@ -18,16 +18,16 @@ const FeaturedCard = ({cards = [1, 2, 3]}) => {
           {
             cards?.map((card)=>{
               return(
-                <Link to={`/categories/${card}`} className="p-4 md:w-1/3 cursor-pointer">
+                <Link to={`/categories/${card}`} className="p-4 md:w-1/3 cursor-pointer" key={card.id}>
                   <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
                     <div className="flex items-center mb-3">
                       <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
                         <svg
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           className="w-5 h-5"
                           viewBox="0 0 24 24"
                         >
@@ -48,9 +48,9 @@ const FeaturedCard = ({cards = [1, 2, 3]}) => {
                         <svg
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           className="w-4 h-4 ml-2"
                           viewBox="0 0 24 24"
                         >

@@ -27,7 +27,7 @@ const Home = () => {
         <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
           PRODUCTS
         </h2>
-        <h1 classNameName="sm:text-3xl text-2xl font-medium title-font text-gray-900">
+        <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">
           MOST POPULAR RPODUCTS
         </h1>
       </div>
