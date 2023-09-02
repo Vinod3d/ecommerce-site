@@ -28,7 +28,7 @@ const navigation = [
   }
 ]
 
-const carts = JSON.parse(localStorage.getItem('cart'));
+const carts = JSON.parse(localStorage.getItem('cart')) || [];
 
 const Header = () => {
   return (
